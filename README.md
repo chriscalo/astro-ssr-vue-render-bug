@@ -15,9 +15,11 @@ npm start
 2. Open [http://localhost:8080/](http://localhost:8080/) and notice that the
 page only says "Hi 👋🏼"
 
+![Screenshot from step 2](https://github.com/chriscalo/astro-ssr-vue-render-bug/assets/867717/6599aa18-9e02-43e9-851e-c1713d4b490a)
+
+
 3. Find the file `ui/pages/index.astro` and add a `client:load` attribute to the
-`<IndexPage/>` component. Refresh the page and notice that there's now an
-interactive button labeled "Count is: 0".
+`<IndexPage/>` component.
 
 ```diff
   ---
@@ -29,6 +31,12 @@ interactive button labeled "Count is: 0".
 +   <IndexPage client:load/>
   </HtmlDocument>
 ```
+
+4. Refresh the page and notice that there's now an interactive button labeled
+"Count is: 0".
+
+![Screenshot from step 4](https://github.com/chriscalo/astro-ssr-vue-render-bug/assets/867717/d3a81847-463a-44ff-b2d9-2365a2aecc34)
+
 
 ## Expected
 
