@@ -1,0 +1,18 @@
+{
+  "name": "astro-ssr-vue-render-bug",
+  "type": "module",
+  "workspaces": [
+    "server",
+    "ui"
+  ],
+  "scripts": {
+    "start": "nodemon -e js,mjs,json,astro,sql,vue --watch . --ignore ui/dist --inspect server/index.js"
+  },
+  "devDependencies": {
+    "node": "^20.11.1",
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "~": "file:./"
+  }
+}

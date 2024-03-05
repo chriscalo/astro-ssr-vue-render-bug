@@ -1,0 +1,18 @@
+{
+  "name": "ui",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "!": "file:./",
+    "@astrojs/node": "^8.2.1",
+    "@astrojs/vue": "^4.0.8",
+    "astro": "^4.4.4",
+    "express": "^4.18.2",
+    "vue": "^3.4.21"
+  }
+}
